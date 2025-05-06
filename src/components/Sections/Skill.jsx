@@ -5,6 +5,8 @@ import javascript from "../../assets/javascript-js.svg";
 import php from "../../assets/php.svg";
 import react from "../../assets/react.svg";
 import tailwind from "../../assets/tailwind-css.svg";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const Skill = () => {
     const skillBassic = [
@@ -41,10 +43,14 @@ const Skill = () => {
         },
     ];
 
+    useEffect(() => {
+        AOS.refresh(); // refresh AOS ketika sidebar toggle
+    }, []);
+
     return (
         <div className="mb-4">
             <h2 className="text-lg mx-4">Bassic :</h2>
-            <div data-aos="fade-left" data-aos-once="true">
+            <div data-aos="fade-left" data-aos-duration="800">
                 <div className="flex  gap-2 overflow-y-hidden overflow-x-auto whitespace-nowrap mx-4">
                     {skillBassic.map((item, index) => (
                         <div
@@ -58,7 +64,7 @@ const Skill = () => {
                 </div>
             </div>
             <h2 className="text-lg mx-4 mt-4">Framework :</h2>
-            <div data-aos="fade-left">
+            <div data-aos="fade-right" data-aos-duration="800">
                 <div className="flex gap-2 overflow-y-hidden overflow-x-auto whitespace-nowrap mx-4">
                     {skillFramework.map((item, index) => (
                         <div
