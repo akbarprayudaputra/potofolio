@@ -1,8 +1,18 @@
 import { Menu } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+
+    useEffect(() => {
+        AOS.init({ once: true });
+    }, []);
+
+    useEffect(() => {
+        AOS.refresh(); // refresh AOS ketika sidebar toggle
+    }, [isOpen]);
 
     return (
         <>
