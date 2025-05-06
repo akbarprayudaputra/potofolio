@@ -25,7 +25,7 @@ const Navbar = () => {
 
 export const DropDown = () => {
     return (
-        <div className="bg-amber-50 w-full">
+        <div className="bg-amber-50">
             <ul>
                 <li className="py-2 px-1">TEst</li>
                 <li className="py-2 px-1">TEst</li>
