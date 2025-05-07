@@ -11,14 +11,7 @@ const Navbar = () => {
                 <h1 className="font-semibold">Portofolio</h1>
                 <Menu strokeWidth={3} onClick={() => setIsOpen(!isOpen)} />
             </nav>
-            {isOpen && (
-                <div
-                    data-aos="fade-left"
-                    className="absolute z-50 bg-amber-50 w-full"
-                >
-                    <DropDown />
-                </div>
-            )}
+            {isOpen && <DropDown />}
         </>
     );
 };
