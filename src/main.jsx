@@ -5,7 +5,10 @@ import App from "./App.jsx";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-AOS.init();
+AOS.init({
+    once: true,
+    duration: 800,
+});
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
