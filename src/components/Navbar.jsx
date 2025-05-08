@@ -22,7 +22,7 @@ const Navbar = () => {
 
 export const DropDown = () => {
     return (
-        <div className="bg-amber-50 absolute z-50 right-0 left-0q   `1s">
+        <div className="bg-amber-50 absolute z-50 right-0 left-0">
             <ul>
                 <li className="py-2 px-1">TEst</li>
                 <li className="py-2 px-1">TEst</li>
