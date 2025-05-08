@@ -11,14 +11,18 @@ const Navbar = () => {
                 <h1 className="font-semibold">Portofolio</h1>
                 <Menu strokeWidth={3} onClick={() => setIsOpen(!isOpen)} />
             </nav>
-            {isOpen && <DropDown />}
+            {isOpen && (
+                <div data-aos="fade-down">
+                    <DropDown />
+                </div>
+            )}
         </>
     );
 };
 
 export const DropDown = () => {
     return (
-        <div className="bg-amber-50">
+        <div className="bg-amber-50 absolute z-50 right-0 left-0q   `1s">
             <ul>
                 <li className="py-2 px-1">TEst</li>
                 <li className="py-2 px-1">TEst</li>
