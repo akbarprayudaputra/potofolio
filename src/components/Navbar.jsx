@@ -14,7 +14,7 @@ const Navbar = () => {
             {isOpen && (
                 <div
                     data-aos="fade-left"
-                    className="absolute right-0 left-0 z-50"
+                    className="max-w-full absolute z-50 left-0 right-0"
                 >
                     <DropDown />
                 </div>
