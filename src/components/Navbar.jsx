@@ -12,7 +12,10 @@ const Navbar = () => {
                 <Menu strokeWidth={3} onClick={() => setIsOpen(!isOpen)} />
             </nav>
             {isOpen && (
-                <div data-aos="fade-down">
+                <div
+                    data-aos="fade-left"
+                    className="absolute right-0 left-0 z-50"
+                >
                     <DropDown />
                 </div>
             )}
@@ -22,7 +25,7 @@ const Navbar = () => {
 
 export const DropDown = () => {
     return (
-        <div className="bg-amber-50 absolute z-50 right-0 left-0">
+        <div className="bg-amber-50">
             <ul>
                 <li className="py-2 px-1">TEst</li>
                 <li className="py-2 px-1">TEst</li>
