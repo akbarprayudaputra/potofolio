@@ -11,21 +11,14 @@ const Navbar = () => {
                 <h1 className="font-semibold">Portofolio</h1>
                 <Menu strokeWidth={3} onClick={() => setIsOpen(!isOpen)} />
             </nav>
-            {isOpen && (
-                <div
-                    data-aos="fade-left"
-                    className="max-w-full absolute z-50 left-0 right-0"
-                >
-                    <DropDown />
-                </div>
-            )}
+            {isOpen && <DropDown />}
         </>
     );
 };
 
 export const DropDown = () => {
     return (
-        <div className="bg-amber-50">
+        <div className="bg-amber-50 absolute z-50 right-0 left-0">
             <ul>
                 <li className="py-2 px-1">TEst</li>
                 <li className="py-2 px-1">TEst</li>

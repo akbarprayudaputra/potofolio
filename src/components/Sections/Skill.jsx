@@ -5,8 +5,6 @@ import javascript from "../../assets/javascript-js.svg";
 import php from "../../assets/php.svg";
 import react from "../../assets/react.svg";
 import tailwind from "../../assets/tailwind-css.svg";
-import { useEffect } from "react";
-import AOS from "aos";
 
 const Skill = () => {
     const skillBassic = [
@@ -42,10 +40,6 @@ const Skill = () => {
             logo: tailwind,
         },
     ];
-
-    useEffect(() => {
-        AOS.refresh(); // refresh AOS ketika sidebar toggle
-    }, []);
 
     return (
         <div className="mb-4">
