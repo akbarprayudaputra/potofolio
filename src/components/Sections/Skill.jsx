@@ -44,7 +44,7 @@ const Skill = () => {
     return (
         <div className="mb-4">
             <h2 className="text-lg mx-4">Bassic :</h2>
-            <div data-aos="fade-left" data-aos-duration="800">
+            <div data-aos="fade-left">
                 <div className="flex  gap-2 overflow-y-hidden overflow-x-auto whitespace-nowrap mx-4">
                     {skillBassic.map((item, index) => (
                         <div
@@ -58,7 +58,7 @@ const Skill = () => {
                 </div>
             </div>
             <h2 className="text-lg mx-4 mt-4">Framework :</h2>
-            <div data-aos="fade-right" data-aos-duration="800">
+            <div data-aos="fade-right">
                 <div className="flex gap-2 overflow-y-hidden overflow-x-auto whitespace-nowrap mx-4">
                     {skillFramework.map((item, index) => (
                         <div
