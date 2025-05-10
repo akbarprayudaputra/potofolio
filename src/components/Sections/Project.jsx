@@ -30,7 +30,7 @@ export const ProjectCard = ({ title, desc, img, target }) => {
             <div>
                 <a
                     href={target}
-                    className="hover:underline underline-offset-4 hover:text-amber-600 hover:cursor-pointer"
+                    className="hover:underline underline-offset-[7px] hover:text-blue-600 hover:cursor-pointer text-blue-800"
                 >
                     <h1 className="text-lg font-semibold my-2">{title}</h1>
                 </a>
