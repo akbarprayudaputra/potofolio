@@ -3,7 +3,7 @@ import php from "../../assets/php.svg";
 
 const Project = () => {
     return (
-        <section className="mx-4 mt-10">
+        <section className="mx-4 mt-10" id="project">
             <h1 className="text-xl font-semibold">Project:</h1>
             <ProjectCard
                 img={laravel}

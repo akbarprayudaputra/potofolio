@@ -42,7 +42,7 @@ const Skill = () => {
     ];
 
     return (
-        <div className="mb-4">
+        <div className="mb-4" id="skill">
             <h2 className="text-lg mx-4">Bassic :</h2>
             <div data-aos="fade-left">
                 <div className="flex  gap-2 overflow-y-hidden overflow-x-auto whitespace-nowrap mx-4">
